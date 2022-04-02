@@ -15,14 +15,16 @@ import numpy as np
 df = pd.read_csv('iris.csv', header=None)  
 # Read CSV data and form a dataframe. Added "header=none" to take the first line of data set into account.
 
+
 df.columns = ["Sepal_length", "Sepal_width", "Petal_length", "Petal_width", "Iris class"] 
 # Adding headings to the dataset.
+# If I was to print, dataframe, the data set is too large therefore it will print a summary (first and last 5 rows).
 
-print (df)
-# Print dataframe, the data set is too large therefore it will print a summary (first and last 5 rows).
 
-f = open ("iris.txt", "x")
-# Create a txt file called iris and put to write mode
+print(df.to_csv(r'dataSummary.txt',
+                header = df.columns,
+                index = "Dataset",
+                sep= " ",
+                mode = "a"))
+            
 
-f.write (df.to_string)
-# Writes the dataframe in the txt file,f.write (df) will only write a string into the txt file, not dataframe
