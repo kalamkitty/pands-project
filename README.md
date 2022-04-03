@@ -33,7 +33,11 @@ To do;
    To save this to a single text file. At my first attempt, I used write to txt file, notes from lecture, however the data did not look tidy, therefore I did further research (https://pandas.pydata.org/docs/user_guide/options.html)
    Organise the data.
 
-2. Summary of data : min, max, median, skew, mean, std of each variable ("how to calculate summary statistics pandas). Used pandas' math functions to do this, but the code looked repetitive. To represent the summary stats on a table (towardsdatascience), using pandas' decribe method, compile the summary stats and display on a table. Summary of stats over all and by iris class using groupby function. 
+2. Summary of data : min, max, median, skew, mean, std of each variable ("how to calculate summary statistics pandas). Used pandas' math functions to do this, but the code looked repetitive. To represent the summary stats on a table (towardsdatascience), using pandas' decribe method, compile the summary stats and display on a table. Summary of stats over all and by iris class using groupby function. (to do)
+
+3. For visual representation of data, there are Matplotlib, Seaborn and more (simplelilearn). Histogram of each variable, use matplotlib, showing the frequancy/distribution of a variable. Using w3 as base for my code. Histogram for entire data set and also by class. 
+
+
 
 
 
@@ -57,3 +61,7 @@ https://stackoverflow.com/questions/11707586/how-do-i-expand-the-output-display-
 https://towardsdatascience.com/mastering-summary-statistics-with-pandas-d515e17756be#:~:text=Pandas%20is%20a%20python%20library,statistical%20analysis%20and%20much%20more.
 
 https://stackoverflow.com/questions/49188960/how-to-show-all-columns-names-on-a-large-pandas-dataframe
+
+https://www.simplilearn.com/tutorials/python-tutorial/data-visualization-in-python#:~:text=Matplotlib%20and%20Seaborn%20are%20python,primarily%20used%20for%20statistical%20graphs.
+
+https://www.onlinetutorialspoint.com/pandas/pandas-plotting-histogram-from-pandas-dataframes.html
