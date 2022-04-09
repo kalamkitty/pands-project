@@ -11,8 +11,12 @@ import pandas as pd
 import numpy as np
 # importing the numpy function
 
+import matplotlib.pyplot as plt
 
-df = pd.read_csv('iris.csv', header = None)  
+
+
+
+df = pd.read_csv ('iris.csv', header = None)  
 # Read CSV data and form a dataframe. Added "header=none" to take the first line of data set into account.
 
 
@@ -21,18 +25,24 @@ df.columns = ["Sepal length (cm)", "Sepal width (cm)", "Petal length (cm)", "Pet
 # If I was to print, dataframe, the data set is too large therefore it will print a summary (first and last 5 rows).
 
 pd.set_option("display.max_rows", 150)
-# setting the max display rows to 150 as there are 150 lines of data.
+# set no limit on the amount of rows or columns, to avoid "..." in summary data
 
 with open("data.txt", "w") as f:
-     f.write(str(df))
+     f.write (str(df))
 # open txt file and set to write mode. Write data into txt file., added str ....
 
 with open("summaryData.txt", "w") as f:
-    f.write(str(df[["Sepal length (cm)", "Sepal width (cm)", "Petal length (cm)", "Petal width (cm)"]].describe()))
-# the describe method, write a summary of statistics in a single txt file called summaryData, summary of each heading, not including class
+    f.write (str(df[["Sepal length (cm)", "Sepal width (cm)", "Petal length (cm)", "Petal width (cm)"]].describe()))
+   # the describe method, write a summary of statistics in a single txt file called summaryData, summary of each heading, not including class.
 
 
-# statistics by class
+
+df.hist (column="Sepal length (cm)")
+df.hist (column="Sepal width (cm)")
+df.hist (column="Petal length (cm)")
+df.hist (column="Petal width (cm)")
+plt.show()
+
 
 
 
