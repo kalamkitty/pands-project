@@ -29,7 +29,6 @@ df.columns = ["Sepal_length", "Sepal_width", "Petal_length", "Petal_width", "Cla
 pd.set_option ("display.max_rows", 150)
 # set no limit on the amount of rows or columns, to avoid "..." in summary data
 
-df.groupby("Class")
 
 with open ("data.txt", "w") as f:
      f.write (str(df))
@@ -39,52 +38,59 @@ with open ("summaryData.txt", "w") as f:
     f.write (str(df[["Sepal_length", "Sepal_width", "Petal_length", "Petal_width"]].describe()))
    # the describe method, write a summary of statistics in a single txt file called summaryData, summary of each heading, not including class.
 
+######## Histograms ########
 
-df.groupby("Class")
-fig 1 = sns.histplot (data= df, x= "Sepal_length", hue= "Class",multiple='stack')
+sns.histplot (df, x= "Sepal_length", hue= "Class")
 plt.title ("Sepal_Length")
 plt.savefig ("sepalLengthHist.png")
+plt.close()
 
-
-sns.histplot (data= df, x= "Sepal_width", hue= "Class",multiple='stack')
+sns.histplot (df, x= "Sepal_width", hue= "Class")
 plt.title ("Sepal_width")
 plt.savefig ("sepalWidthhist.png")
+plt.close()
 
-
-sns.histplot (data= df, x= "Petal_length", hue= "Class",multiple='stack')
+sns.histplot (df, x= "Petal_length", hue= "Class")
 plt.title ("Petal_length")
 plt.savefig ("petalLengthhist.png")
+plt.close()
 
-
-sns.histplot (data= df, x= "Petal_width", hue= "Class",multiple='stack')
+sns.histplot (df, x= "Petal_width", hue= "Class")
 plt.title ("Petal_width")
 plt.savefig ("petalWidthhist.png")
+plt.close()
 
 ######## Scatter Plots ########
 
 sns.scatterplot (x= "Sepal_length", y= "Petal_length", data= df, hue= "Class")
 plt.title ("SepalLength vs PetalLength")
 plt.savefig ("scatterPlot1.png")
+plt.close()
 
-sns.scatterplot (x= "Sepal_length", y= "Sepal_Width", data= df, hue= "Class")
+sns.scatterplot (x= "Sepal_length", y= "Sepal_width", data= df, hue= "Class")
 plt.title ("SepalLength vs SepalWidth")
 plt.savefig ("scatterPlot2.png")
+plt.close()
 
-sns.scatterplot (x= "Petal_length", y= "Sepal_Width", data= df, hue= "Class")
+sns.scatterplot (x= "Petal_length", y= "Sepal_width", data= df, hue= "Class")
 plt.title ("PetalLength vs SepalWidth")
 plt.savefig ("scatterPlot3.png")
+plt.close()
 
-sns.scatterplot (x= "Petal_length", y= "Petal_Width", data= df, hue= "Class")
+sns.scatterplot (x= "Petal_length", y= "Petal_width", data= df, hue= "Class")
 plt.title ("PetalLength vs PetallWidth")
 plt.savefig ("scatterPlot4.png")
+plt.close()
 
-sns.scatterplot (x= "Sepal_length", y= "Petal_Width", data= df, hue= "Class")
+sns.scatterplot (x= "Sepal_length", y= "Petal_width", data= df, hue= "Class")
 plt.title ("SepalLength vs PetalWidth")
 plt.savefig ("scatterPlot5.png")
+plt.close()
 
-sns.scatterplot (x= "Sepal_Width", y= "Petal_Width", data= df, hue= "Class")
+sns.scatterplot (x= "Sepal_width", y= "Petal_width", data= df, hue= "Class")
 plt.title ("SepalWidth vs PetalWidth")
 plt.savefig ("scatterPlot6.png")
+plt.close()
 
 
 

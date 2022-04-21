@@ -33,9 +33,10 @@ To do;
    To save this to a single text file. At my first attempt, I used write to txt file, notes from lecture, however the data did not look tidy, therefore I did further research (https://pandas.pydata.org/docs/user_guide/options.html)
    Organise the data.
 
-2. Summary of data : min, max, median, skew, mean, std of each variable ("how to calculate summary statistics pandas). Used pandas' math functions to do this, but the code looked repetitive. To represent the summary stats on a table (towardsdatascience), using pandas' decribe method, compile the summary stats and display on a table. Summary of stats over all and by iris class using groupby function. (to do)
+2. Summary of data : min, max, median, skew, mean, std of each variable ("how to calculate summary statistics pandas). Used pandas' math functions to do this, but the code looked repetitive. To represent the summary stats on a table (towardsdatascience), using pandas' decribe method, compile the summary stats and display on a table. Summary of stats over all and by iris class using groupby function. (activestate)
 
-3. For visual representation of data, there are Matplotlib, Seaborn and more (simplelilearn). Histogram of each variable, use matplotlib, showing the frequancy/distribution of a variable. Using w3 as base for my code. Histogram for entire data set and also by class. 
+3. For visual representation of data, there are Matplotlib, Seaborn and more (simplelilearn). Histogram of each variable, use matplotlib, showing the frequancy/distribution of a variable. Using w3 as base for my code. Histogram by class using seaborn (dataindependent). Step (element = "step") hard to read. Grouping data in python.
+   Scatter plots, correlation between variables.  Used plt.close to avoid overlapping plots.
 
 
 
@@ -65,3 +66,15 @@ https://stackoverflow.com/questions/49188960/how-to-show-all-columns-names-on-a-
 https://www.simplilearn.com/tutorials/python-tutorial/data-visualization-in-python#:~:text=Matplotlib%20and%20Seaborn%20are%20python,primarily%20used%20for%20statistical%20graphs.
 
 https://www.onlinetutorialspoint.com/pandas/pandas-plotting-histogram-from-pandas-dataframes.html
+
+https://dataindependent.com/pandas/pandas-histogram-dataframe-hist/
+
+https://seaborn.pydata.org/generated/seaborn.histplot.html
+
+https://realpython.com/pandas-groupby/
+
+https://www.activestate.com/resources/quick-reads/how-to-group-data-in-python-using-pandas/
+
+https://matplotlib.org/3.5.0/api/_as_gen/matplotlib.pyplot.close.html
+
+https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Python_Seaborn_Cheat_Sheet.pdf
