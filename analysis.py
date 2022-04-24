@@ -1,10 +1,5 @@
 # Author: Kitty Kwan
 
-
-
-from nbformat import write
-
-
 import pandas as pd  
 # importing pandas to read the csv file
 
@@ -36,7 +31,14 @@ with open ("data.txt", "w") as f:
 
 with open ("summaryData.txt", "w") as f:
     f.write (str(df[["Sepal_length", "Sepal_width", "Petal_length", "Petal_width"]].describe()))
-   # the describe method, write a summary of statistics in a single txt file called summaryData, summary of each heading, not including class.
+    f.write ("\n")
+    f.write ("\n")
+    # the describe method, write a summary of statistics in a single txt file called summaryData, summary of each heading, not including class. "\n"
+    # used to append a line to space out info.
+
+    f.write (str("Correlation between pairs of variables by class of iris\n"))
+    f.write (str(df.groupby("Class").corr ()))
+    # using pandas' built in 'corr' function to calculate the correlation between the variables of the dataset.
 
 ######## Histograms ########
 
@@ -91,6 +93,9 @@ sns.scatterplot (x= "Sepal_width", y= "Petal_width", data= df, hue= "Class")
 plt.title ("SepalWidth vs PetalWidth")
 plt.savefig ("scatterPlot6.png")
 plt.close()
+
+######## Box Plots ########
+# 
 
 
 

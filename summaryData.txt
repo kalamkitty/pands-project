@@ -7,3 +7,19 @@ min        4.300000     2.000000      1.000000     0.100000
 50%        5.800000     3.000000      4.350000     1.300000
 75%        6.400000     3.300000      5.100000     1.800000
 max        7.900000     4.400000      6.900000     2.500000
+
+Correlation between pairs of variables by class of iris
+                              Sepal_length  Sepal_width  Petal_length  Petal_width
+Class                                                                             
+Iris-setosa     Sepal_length      1.000000     0.746780      0.263874     0.279092
+                Sepal_width       0.746780     1.000000      0.176695     0.279973
+                Petal_length      0.263874     0.176695      1.000000     0.306308
+                Petal_width       0.279092     0.279973      0.306308     1.000000
+Iris-versicolor Sepal_length      1.000000     0.525911      0.754049     0.546461
+                Sepal_width       0.525911     1.000000      0.560522     0.663999
+                Petal_length      0.754049     0.560522      1.000000     0.786668
+                Petal_width       0.546461     0.663999      0.786668     1.000000
+Iris-virginica  Sepal_length      1.000000     0.457228      0.864225     0.281108
+                Sepal_width       0.457228     1.000000      0.401045     0.537728
+                Petal_length      0.864225     0.401045      1.000000     0.322108
+                Petal_width       0.281108     0.537728      0.322108     1.000000

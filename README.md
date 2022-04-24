@@ -26,6 +26,10 @@ To do;
  - Scatter plot for each pair of vairables
  - Any other analysis (correlation)
 
+Libraries used:
+- Matplotlib
+- Seaborn
+
 # TO DO
 
 1. Importing dataset to repo as csv file. Write in file, headings ( https://www.pythontutorial.net/python-basics/python-write-csv-file/).
@@ -35,11 +39,23 @@ To do;
 
 2. Summary of data : min, max, median, skew, mean, std of each variable ("how to calculate summary statistics pandas). Used pandas' math functions to do this, but the code looked repetitive. To represent the summary stats on a table (towardsdatascience), using pandas' decribe method, compile the summary stats and display on a table. Summary of stats over all and by iris class using groupby function. (activestate)
 
-3. For visual representation of data, there are Matplotlib, Seaborn and more (simplelilearn). Histogram of each variable, use matplotlib, showing the frequancy/distribution of a variable. Using w3 as base for my code. Histogram by class using seaborn (dataindependent). Step (element = "step") hard to read. Grouping data in python.
+3. For visual representation of data, there are Matplotlib, Seaborn and more (simplelilearn). Histogram of each variable, use matplotlib, showing the frequancy/distribution of a variable. Using w3 as base for my code. Histogram by class using seaborn (dataindependent). Step (element = "step") hard to read. According to jigsawacademy, Seaborn is used over Grouping data in python.
    Scatter plots, correlation between variables.  Used plt.close to avoid overlapping plots.
 
 
+# Analysing dataset
 
+# Observtions
+
+- Summary of data
+
+- Correlation 
+  0 indicate no relationship/correlation
+  1 indicate positive linear relationship
+  This table suggest
+  
+- Histograms/Scatter plots
+  
 
 
 
@@ -78,3 +94,5 @@ https://www.activestate.com/resources/quick-reads/how-to-group-data-in-python-us
 https://matplotlib.org/3.5.0/api/_as_gen/matplotlib.pyplot.close.html
 
 https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Python_Seaborn_Cheat_Sheet.pdf
+
+Ratner, B. The correlation coefficient: Its values range between +1/−1, or do they?. J Target Meas Anal Mark 17, 139–142 (2009). https://doi.org/10.1057/jt.2009.5
