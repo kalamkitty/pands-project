@@ -1,34 +1,43 @@
 # Pands project 2022
 
-Introduction
+# How to run the code
+ - Install the latest version of python for example Anaconda.
+ - Install Visual Studio Code.
+ - Install any neccessary Python libraries e.g. Seaborn, matplotlib
+
+# Introduction
 
 This is my project for Programming and Scripting module. 
-The Iris Data Set by Fisher, 1936 is a data set which consists of "3 classes of 50 instances each", each class referes to a type of iris plant. 
+The Iris Data Set by Fisher, 1936 is a data set which consists of 150 records of "3 classes of 50 instances each", each class referes to a type of iris plant. It was first published in "The use of multiple measurements in taxonomic problems". 
+
 The attributes (variables) that distinguish each type of iris plant are
       1. Sepal length in cm
       2. Sepal width in cm
       3. Petal width in cm
-      4. Class
+      4. Petal length in cm
+      5. Class
          -- Iris Setonsa
          -- Iris Versicolour
          -- Iris Vinginica
 
-To start, I read through the website that the data set is available on (ref 1). Downloaded the dataset and saved as a CSV file in this repository.
+# Task
 
-To analyse the data, I researched Pandas (tutorials on Pandas documentation, further reading), allows users to analyse a data set, sort the data and add value. 
-
-Put dataset into tables called dataframes, to put data into a table with rows and tables.
-
-Add csv data to repository
-To do;
+The task is to research and analyse this data set using Python, produce visual representation of the data and summarise the findings.
  - summary of each variable to a single text file (overview of entire data set)
  - Histogram of each vairable to png files
  - Scatter plot for each pair of vairables
  - Any other analysis (correlation)
 
+# Analysis of the Iris dataset
+
 Libraries used:
-- Matplotlib
-- Seaborn
+
+- Matplotlib - This library is used to create visual representations of data such as histograms and bar charts. Further information on Matplotlib can be found here https://matplotlib.org/.
+
+- Seaborn - The Seaborn library, based on Matplotlib is a data visualisation tool. It allows the user to fully customise the plots. Further information on Seaborn can be found here https://seaborn.pydata.org/index.html.
+
+- Pandas - This is very useful tool in data analysisTo analyse the data, it allows users to analyse a data set, sort the data and add value. Put dataset into tables called dataframes, to write data to different file formats such as CSV and text files. Further information on pandas can be found here http://pandas.pydata.org/.
+
 
 # TO DO
 
