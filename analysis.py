@@ -21,8 +21,10 @@ df.columns = ["Sepal_length", "Sepal_width", "Petal_length", "Petal_width", "Cla
 # Adding headings to the dataset.
 # If I was to print, dataframe, the data set is too large therefore it will print a summary (first and last 5 rows).
 
-pd.set_option ("display.max_rows", 150)
-# set no limit on the amount of rows or columns, to avoid "..." in summary data.
+pd.set_option ("display.max_rows", None)
+pd.set_option ("display.max_columns", None)
+pd.set_option ("display.width", 200) 
+# set no limit on the amount of rows or width of rows, to avoid "..." in summary data.
 
 
 with open ("data.txt", "w") as f:
@@ -30,7 +32,11 @@ with open ("data.txt", "w") as f:
     # open txt file and set to write mode. Write data into txt file.
 
 with open ("summaryData.txt", "w") as f:
+    f.write (str("Summary of data\n"))
     f.write (str(df[["Sepal_length", "Sepal_width", "Petal_length", "Petal_width"]].describe()))
+    f.write ("\n")
+    f.write (str("Summary of data by Iris class\n"))
+    f.write (str(df.groupby("Class").describe ())) 
     f.write ("\n")
     f.write ("\n")
     # the describe method, write a summary of statistics in a single txt file called summaryData, summary of each heading, not including class. "\n"
