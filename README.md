@@ -12,7 +12,7 @@
 3. analysis.py
     - 3.1 Libraries used
     - 3.2 Summary of variables in a single text file
-    - 3.3 
+    - 3.3 Visual representation of data
 4. Observations/ Conclusions
 5. References
 
@@ -58,7 +58,7 @@ import pandas as pd
 import seaborn as sns  
 ``` 
 
-### 3.2 Summary of variables in a single text file
+### 3.2.1 Summary of variables in a single text file
 The following program uses Pandas to creat a dataframe from importing dataset (csv file). Add headings.
 Sort the data to a single text file. "header=none" to take in account of the first row of data (without it will assume second row of data is the first row of data to be considered). 
 
@@ -76,31 +76,53 @@ with open ("summaryData.txt", "w") as f:
    f.write (str(df[["Sepal_length", "Sepal_width", "Petal_length", "Petal_width"]].describe()))
 ```
 
+Using Pandas' built in correlation function ".corr ()", to calculate the correlation between pairs of variables in the dataset.
 
-Used Pandas' built in correlation function ".corr ()", to calculate the correlation between pairs of variables in the dataset.
-For visual representation of data, there are Matplotlib, Seaborn and more (simplelilearn). Histogram of each variable, use matplotlib, showing the frequancy/distribution of a variable. Using w3 as base for my code. Histogram by class using seaborn (dataindependent). Step (element = "step") hard to read. According to jigsawacademy, Seaborn is used over Grouping data in python.
-   Scatter plots, correlation between variables.  Used plt.close to avoid overlapping plots.
+```python
+f.write (str("Correlation between pairs of variables by class of iris\n"))
+    f.write (str(df.groupby("Class").corr ()))
+```
 
+#### 3.2.2 Observations
 
-# Observtions/Conclusion
-
-- Summary of data
-  
 
 - Correlation 
   0 indicate no relationship/correlation
   1 indicate positive linear relationship
   This table suggest
+
+### 3.3.1 Visual representation of data
+For visual representation of data, there are Matplotlib, Seaborn and more (simplelilearn). 
+
+The below program was used to plot histogram of each variable, using seaborn, showing the frequancy/distribution of a variable.
+
+```python
+sns.histplot (df, x= , hue= )
+plt.title ()
+plt.savefig ()
+plt.close()
+```
+Seaborn can be also used to create scatter plots, which shows correlation between variables.  
+
+```python
+sns.scatterplot (x= , y= , data= df, hue= )
+plt.title ()
+plt.savefig ()
+plt.close()
+```
+#### 3.3.2 Observations
+
+
+
   
-- Histograms/Scatter plots
-  
+
+## 4. Conclusion
 
 
 
 
 
-
-# References
+## 5. References
 https://www.w3schools.com/python/pandas/default.asp
 
 https://realpython.com/pandas-dataframe/#retrieving-labels-and-data
