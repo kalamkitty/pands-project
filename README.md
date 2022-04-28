@@ -7,13 +7,15 @@
 
 ## Table of Contents
 1. Introduction
-    - 1.1 Fisher's Iris data set
+    -  Fisher's Iris data set
 2. Task
 3. analysis.py
-    - 3.1 Libraries used
-    - 3.2 Summary of variables in a single text file
-    - 3.3 Visual representation of data
-4. Observations/ Conclusions
+    -  Libraries used
+      - Summary of variables in a single text file
+        -  Observations
+    -  Visual representation of data
+        -  Observations
+4. Conclusions
 5. References
 
 
@@ -21,7 +23,7 @@
 
 This is my project for Programming and Scripting module 2022. Instructions for this assignment can be found here (LINK TO PROJECT PDF).
 
-### 1.1 Fisher's Iris data set
+### Fisher's Iris data set
 The Iris Data Set by Roanld Fisher, 1936 is a data set which consists of 150 records of "3 classes of 50 instances each", each class referes to a type of iris plant. It was first published in "The use of multiple measurements in taxonomic problems". 
 
 The attributes (variables) that distinguish each type of iris plant are
@@ -37,20 +39,20 @@ The attributes (variables) that distinguish each type of iris plant are
 ## 2. Task
 
 The task is to research and analyse this data set using Python, produce visual representation of the data and summarise the findings.
- - summary of each variable to a single text file (overview of entire data set)
- - Histogram of each vairable to png files
- - Scatter plot for each pair of vairables
- - Any other analysis 
+ * summary of each variable to a single text file (overview of entire data set)
+ * Histogram of each vairable to png files
+ * Scatter plot for each pair of vairables
+ * Any other analysis 
 
 ## 3. analysis.py
 
-### 3.1 Libraries used
+### Libraries used
 
-Matplotlib - This library is used to create visual representations of data such as histograms and bar charts. Further information on Matplotlib can be found here https://matplotlib.org/.
+* Matplotlib - This library is used to create visual representations of data such as histograms and bar charts. Further information on Matplotlib can be found here https://matplotlib.org/.
 
-Seaborn - The Seaborn library, based on Matplotlib is a data visualisation tool. It allows the user to fully customise the plots. Further information on Seaborn can be found here https://seaborn.pydata.org/index.html.
+* Seaborn - The Seaborn library, based on Matplotlib is a data visualisation tool. It allows the user to fully customise the plots. Further information on Seaborn can be found here https://seaborn.pydata.org/index.html.
 
-Pandas - This is very useful tool in data analysisTo analyse the data, it allows users to analyse a data set, sort the data and add value. Put dataset into tables called dataframes, to write data to different file formats such as CSV and text files. Further information on pandas can be found here http://pandas.pydata.org/.
+* Pandas - This is very useful tool in data analysisTo analyse the data, it allows users to analyse a data set, sort the data and add value. Put dataset into tables called dataframes, to write data to different file formats such as CSV and text files. Further information on pandas can be found here http://pandas.pydata.org/.
 
 ``` python
 import matplotlib.pyplot as plt 
@@ -58,7 +60,7 @@ import pandas as pd
 import seaborn as sns  
 ``` 
 
-### 3.2.1 Summary of variables in a single text file
+### Summary of variables in a single text file
 The following program uses Pandas to creat a dataframe from importing dataset (csv file). Add headings.
 Sort the data to a single text file. "header=none" to take in account of the first row of data (without it will assume second row of data is the first row of data to be considered). 
 
@@ -68,12 +70,12 @@ df.columns = []
 pd.set_option ()
 ```
 Creating a summary table of data : min, max, median, skew, mean, std of each variable using the describe function of Pandas. 
-Write to summaryData.txt
-Represents the summary stats on a table.
+Write to summaryData.txt. Represents the summary stats on a table. To be more specific, I used the groupby function to get summary stats for each class.
 
 ```python
 with open ("summaryData.txt", "w") as f:
    f.write (str(df[["Sepal_length", "Sepal_width", "Petal_length", "Petal_width"]].describe()))
+   f.write (str(df.groupby("Class").describe ())) 
 ```
 
 Using Pandas' built in correlation function ".corr ()", to calculate the correlation between pairs of variables in the dataset.
@@ -83,15 +85,28 @@ f.write (str("Correlation between pairs of variables by class of iris\n"))
     f.write (str(df.groupby("Class").corr ()))
 ```
 
-#### 3.2.2 Observations
-
+#### Observations
+- Stats table 
+  * Iris virginica have the longest sepal length.
+  * Iris setonsa have the largest sepal width.
+  * Iris virginica have the longest petal length.
+  * Iris virginica have the largest petal width.
 
 - Correlation 
   0 indicate no relationship/correlation
   1 indicate positive linear relationship
   This table suggest
+      - Iris setosa
+        * Sepal length and sepal width have a strong correlation.
+        * Low linear relationship between all other attributes.
+      - Iris versicolor 
+        * Petal length and sepal length, petal length and petal width have strong correlation.
+      - Iris virginica
+        * Only petal length and sepal length have a strong linear relationship.
 
-### 3.3.1 Visual representation of data
+- Histogram/scatter plot
+
+### Visual representation of data
 For visual representation of data, there are Matplotlib, Seaborn and more (simplelilearn). 
 
 The below program was used to plot histogram of each variable, using seaborn, showing the frequancy/distribution of a variable.
@@ -110,13 +125,13 @@ plt.title ()
 plt.savefig ()
 plt.close()
 ```
-#### 3.3.2 Observations
+#### Observations
 
 
 
   
 
-## 4. Conclusion
+## 4. Conclusionw
 
 
 
@@ -158,3 +173,7 @@ https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Python_Seaborn_Cheat_Sh
 Ratner, B. The correlation coefficient: Its values range between +1/−1, or do they?. J Target Meas Anal Mark 17, 139–142 (2009). https://doi.org/10.1057/jt.2009.5
 
 ( https://www.pythontutorial.net/python-basics/python-write-csv-file/)
+
+https://towardsdatascience.com/evaluating-linear-relationships-1d239f51297b
+
+https://www.pluralsight.com/guides/interpreting-data-using-descriptive-statistics-python
