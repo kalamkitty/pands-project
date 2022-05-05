@@ -25,6 +25,9 @@ This is my project for Programming and Scripting module 2022. Instructions for t
 
 ### Fisher's Iris data set
 The Iris Data Set by Roanld Fisher, 1936 is a data set which consists of 150 records of "3 classes of 50 instances each", each class referes to a type of iris plant. It was first published in "The use of multiple measurements in taxonomic problems". 
+The data on the two species, Setonsa and Versicolour were collected in Quebac, Canada from the same location by Dr E. Anderson. It was assumed that the Virginica data was collected in the same fashion before Fisher included the dataset in his journal. (Missouri Botanical Garden, 1936)
+
+The purpose of the dataset was to identify species of the Iris flower based on their attributes, however nowadays, it is used worldwide by those who pratice data science. It is an open source dataset with very few variables which makes data visualisation easy. There is a balance of data (50 measurements of each variable) and no missing data (Qureshi,2021)
 
 The attributes (variables) that distinguish each type of iris plant are
       1. Sepal length in cm
@@ -34,7 +37,7 @@ The attributes (variables) that distinguish each type of iris plant are
       5. Class
          -- Iris Setonsa
          -- Iris Versicolour
-         -- Iris Vinginica
+         -- Iris Virginica
 
 ## 2. Task
 
@@ -97,12 +100,12 @@ f.write (str("Correlation between pairs of variables by class of iris\n"))
   1 indicate positive linear relationship
   This table suggest
       - Iris setosa
-        * Sepal length and sepal width have a strong correlation.
-        * Low linear relationship between all other attributes.
+        - Sepal length and sepal width have a strong correlation.
+        - Low linear relationship between all other attributes.
       - Iris versicolor 
-        * Petal length and sepal length, petal length and petal width have strong correlation.
+        - Petal length and sepal length, petal length and petal width have strong correlation.
       - Iris virginica
-        * Only petal length and sepal length have a strong linear relationship.
+        - Only petal length and sepal length have a strong linear relationship.
 
 - Histogram/scatter plot
 
@@ -177,3 +180,9 @@ Ratner, B. The correlation coefficient: Its values range between +1/−1, or do 
 https://towardsdatascience.com/evaluating-linear-relationships-1d239f51297b
 
 https://www.pluralsight.com/guides/interpreting-data-using-descriptive-statistics-python
+
+Annals of the Missouri Botanical Garden
+
+Annals of Eugenics  https://doi.org/10.1111/j.1469-1809.1936.tb02137.x pg 179-188 Volume7, Issue2
+
+https://braintoy.ai/2021/04/19/mighty-iris-dataset/
