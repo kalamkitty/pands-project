@@ -72,7 +72,7 @@ df = pd.read_csv ('iris.csv', header = None)  #df = dataframe
 df.columns = []
 pd.set_option ()
 ```
-Creating a summary table of data : min, max, median, skew, mean, std of each variable using the describe function of Pandas. 
+Creating a summary table of data : min, max, median, mean, std of each variable using the describe function of Pandas. 
 Write to summaryData.txt. Represents the summary stats on a table. To be more specific, I used the groupby function to get summary stats for each class.
 
 ```python
@@ -89,11 +89,13 @@ f.write (str("Correlation between pairs of variables by class of iris\n"))
 ```
 
 #### Observations
-- Stats table 
+- Describe table 
   * Iris virginica have the longest sepal length.
   * Iris setonsa have the largest sepal width.
   * Iris virginica have the longest petal length.
   * Iris virginica have the largest petal width.
+  * Mean = average of data.
+  * Standard deviation = spread of data.
 
 - Correlation 
   0 indicate no relationship/correlation
@@ -107,7 +109,6 @@ f.write (str("Correlation between pairs of variables by class of iris\n"))
       - Iris virginica
         - Only petal length and sepal length have a strong linear relationship.
 
-- Histogram/scatter plot
 
 ### Visual representation of data
 For visual representation of data, there are Matplotlib, Seaborn and more (simplelilearn). 
@@ -129,7 +130,14 @@ plt.savefig ()
 plt.close()
 ```
 #### Observations
+The most useful scatterplots for comparison between the variables are the following;
+- Sepal Length vs Sepal Width : No relation between these variables amongst all three iris class.
+- Petal Length vs Sepal Width : Strong linear relationship between these variables with Verisocolor and Virginica.
+- Petal Length vs Petal Width : Strongest linear relationship between these variables amongst all species. Petal length increases as petal widths increase.
 
+
+From the histograms, we can make the following observations;
+- Setosa stands out from the other iris classes in petal length and petal width.
 
 
   
