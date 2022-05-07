@@ -21,7 +21,7 @@
 
 ## 1. Introduction
 
-This is my project for Programming and Scripting module 2022. Instructions for this assignment can be found here (LINK TO PROJECT PDF).
+This is my project for Programming and Scripting module 2022. Instructions for this assignment can be found here https://learnonline.gmit.ie/pluginfile.php/547122/mod_label/intro/Project.pdf?time=1646300056436
 
 ### Fisher's Iris data set
 The Iris Data Set by Roanld Fisher, 1936 is a data set which consists of 150 records of "3 classes of 50 instances each", each class referes to a type of iris plant. It was first published in "The use of multiple measurements in taxonomic problems". 
@@ -30,19 +30,19 @@ The data on the two species, Setonsa and Versicolour were collected in Quebac, C
 The purpose of the dataset was to identify species of the Iris flower based on their attributes, however nowadays, it is used worldwide by those who pratice data science. It is an open source dataset with very few variables which makes data visualisation easy. There is a balance of data (50 measurements of each variable) and no missing data (Qureshi,2021)
 
 The attributes (variables) that distinguish each type of iris plant are
-      1. Sepal length in cm
-      2. Sepal width in cm
-      3. Petal width in cm
-      4. Petal length in cm
-      5. Class
-         -- Iris Setonsa
-         -- Iris Versicolour
-         -- Iris Virginica
+      * Sepal length in cm
+      * Sepal width in cm
+      * Petal width in cm
+      * Petal length in cm
+      * Class
+         - Iris Setonsa
+         - Iris Versicolour
+         - Iris Virginica
 
 ## 2. Task
 
 The task is to research and analyse this data set using Python, produce visual representation of the data and summarise the findings.
- * summary of each variable to a single text file (overview of entire data set)
+ * Summary of each variable to a single text file (overview of entire data set)
  * Histogram of each vairable to png files
  * Scatter plot for each pair of vairables
  * Any other analysis 
@@ -90,24 +90,22 @@ f.write (str("Correlation between pairs of variables by class of iris\n"))
 
 #### Observations
 - Describe table 
-  * Iris virginica have the longest sepal length.
-  * Iris setonsa have the largest sepal width.
-  * Iris virginica have the longest petal length.
-  * Iris virginica have the largest petal width.
+  * Iris virginica have the longest sepal length and petal length.
+  * Iris setonsa have the largest sepal width but the average (mean) petal length is much smaller than the other species.
   * Mean = average of data.
   * Standard deviation = spread of data.
 
 - Correlation 
   0 indicate no relationship/correlation
   1 indicate positive linear relationship
-  This table suggest
-      - Iris setosa
-        - Sepal length and sepal width have a strong correlation.
-        - Low linear relationship between all other attributes.
-      - Iris versicolor 
-        - Petal length and sepal length, petal length and petal width have strong correlation.
-      - Iris virginica
-        - Only petal length and sepal length have a strong linear relationship.
+  This table suggests;
+* Iris setosa
+   - Sepal length and sepal width have a strong correlation.
+   - Low linear relationship between all other attributes.
+* Iris versicolor 
+    - Petal length and sepal length, petal length and petal width have strong correlation.     
+* - Iris virginica
+    - Only petal length and sepal length have a strong linear relationship.
 
 
 ### Visual representation of data
@@ -138,11 +136,12 @@ The most useful scatterplots for comparison between the variables are the follow
 
 From the histograms, we can make the following observations;
 - Setosa stands out from the other iris classes in petal length and petal width.
+- Petal length and petal width measurements are more useful for classification of the iris class as these histograms have very little overlap.
 
+ 
 
-  
-
-## 4. Conclusionw
+## 4. Conclusion
+From summary data and the visual representation of the data set, I can come to the conclusion that the Setosa species is very different from Vericolour and Virginica as there is more data overlap and correlation with the latter two species, setosa petal widths are significantly smaller than the other iris classes. Petal length and petal width measurements are much better classification attributes than the other attributes.
 
 
 

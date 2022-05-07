@@ -74,34 +74,34 @@ plt.close()
 ######## Scatter Plots ########
 # using seaborn
 
-sns.scatterplot (x= "Sepal_length", y= "Petal_length", data= df, hue= "Class")     # code similar to histplots above.
+sns.scatterplot (x= "Sepal_length", y= "Petal_length", data= df, hue= "Class")     # plots scatterlots, fully customisable
 plt.title ("SepalLength vs PetalLength")
-plt.savefig ("scatterPlot1.png")
+plt.savefig ("SepalLength vs PetalLength.png")
 plt.close()
 
 sns.scatterplot (x= "Sepal_length", y= "Sepal_width", data= df, hue= "Class")
 plt.title ("SepalLength vs SepalWidth")
-plt.savefig ("scatterPlot2.png")
+plt.savefig ("SepalLength vs SepalWidth")
 plt.close()
 
 sns.scatterplot (x= "Petal_length", y= "Sepal_width", data= df, hue= "Class")
 plt.title ("PetalLength vs SepalWidth")
-plt.savefig ("scatterPlot3.png")
+plt.savefig ("PetalLength vs SepalWidth.png")
 plt.close()
 
 sns.scatterplot (x= "Petal_length", y= "Petal_width", data= df, hue= "Class")
 plt.title ("PetalLength vs PetallWidth")
-plt.savefig ("scatterPlot4.png")
+plt.savefig ("PetalLength vs PetallWidth.png")
 plt.close()
 
 sns.scatterplot (x= "Sepal_length", y= "Petal_width", data= df, hue= "Class")
 plt.title ("SepalLength vs PetalWidth")
-plt.savefig ("scatterPlot5.png")
+plt.savefig ("SepalLength vs PetalWidth.png")
 plt.close()
 
 sns.scatterplot (x= "Sepal_width", y= "Petal_width", data= df, hue= "Class")
 plt.title ("SepalWidth vs PetalWidth")
-plt.savefig ("scatterPlot6.png")
+plt.savefig ("SepalWidth vs PetalWidth")
 plt.close()
 
 
