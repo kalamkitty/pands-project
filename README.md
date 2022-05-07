@@ -24,17 +24,17 @@
 This is my project for Programming and Scripting module 2022. Instructions for this assignment can be found here https://learnonline.gmit.ie/pluginfile.php/547122/mod_label/intro/Project.pdf?time=1646300056436
 
 ### Fisher's Iris data set
-The Iris Data Set by Roanld Fisher, 1936 is a data set which consists of 150 records of "3 classes of 50 instances each", each class referes to a type of iris plant. It was first published in "The use of multiple measurements in taxonomic problems". 
-The data on the two species, Setonsa and Versicolour were collected in Quebac, Canada from the same location by Dr E. Anderson. It was assumed that the Virginica data was collected in the same fashion before Fisher included the dataset in his journal. (Missouri Botanical Garden, 1936)
+The Iris Data Set by Roanld Fisher, 1936 is a data set which consists of 150 records of "3 classes of 50 instances each", each class referes to a type of iris plant. It was first published in "The use of multiple measurements in taxonomic problems" (Fisher, 1936).
+The data on the two species, Setonsa and Versicolour were collected in Quebac, Canada from the same location by Dr E. Anderson. It was assumed that the Virginica data was collected in the same fashion before Fisher included the dataset in his journal (Anderson, 1936).
 
-The purpose of the dataset was to identify species of the Iris flower based on their attributes, however nowadays, it is used worldwide by those who pratice data science. It is an open source dataset with very few variables which makes data visualisation easy. There is a balance of data (50 measurements of each variable) and no missing data (Qureshi,2021)
+The purpose of the dataset was to identify species of the Iris flower based on their attributes, however nowadays, it is used worldwide by those who pratice data science. It is an open source dataset with very few variables which makes data visualisation easy. There is a balance of data (50 measurements of each variable) and no missing data (Qureshi, 2021).
 
 The attributes (variables) that distinguish each type of iris plant are
-      * Sepal length in cm
-      * Sepal width in cm
-      * Petal width in cm
-      * Petal length in cm
-      * Class
+  * Sepal length in cm
+  * Sepal width in cm
+  * Petal width in cm
+  * Petal length in cm
+  * Class
          - Iris Setonsa
          - Iris Versicolour
          - Iris Virginica
@@ -148,48 +148,42 @@ From summary data and the visual representation of the data set, I can come to t
 
 
 ## 5. References
-https://www.w3schools.com/python/pandas/default.asp
+Anderson, E., 1936. The Species Problem in Iris. Annals of the Missouri Botanical Garden, 23(3), p.457.
 
-https://realpython.com/pandas-dataframe/#retrieving-labels-and-data
+Aruchamy, V., 2021. How To Add Header To Pandas Dataframe? - Stack Vidhya. [online] Stack Vidhya. Available at: <https://www.stackvidhya.com/how-to-add-header-to-pandas-dataframe/#:~:text=You%20can%20add%20header%20to,%2C%20'column_Name_2'%5D%20method.&text=You%20can%20use%20the%20below,column%20headers%20to%20the%20dataframe.> [Accessed April 2022].
 
-https://www.stackvidhya.com/how-to-add-header-to-pandas-dataframe/#:~:text=You%20can%20add%20header%20to,%2C%20'column_Name_2'%5D%20method.&text=You%20can%20use%20the%20below,column%20headers%20to%20the%20dataframe.
+Dataindependent.com. n.d. Pandas Histogram – DataFrame.hist(). [online] Available at: <https://dataindependent.com/pandas/pandas-histogram-dataframe-hist/> [Accessed April 2022].
 
-https://pandas.pydata.org/docs/user_guide/options.html
+FISHER, R., 1936. THE USE OF MULTIPLE MEASUREMENTS IN TAXONOMIC PROBLEMS. Annals of Eugenics, 7(2), pp.179-188.
 
-https://pandas.pydata.org/pandas-docs/stable/getting_started/intro_tutorials/06_calculate_statistics.html
+Halford, E., 2020. Evaluating linear relationships - How to use scatterplots, correlation coefficients, and linear regression effectively. [online] towardsdatascience. Available at: <https://towardsdatascience.com/evaluating-linear-relationships-1d239f51297b> [Accessed April 2022].
 
-https://stackoverflow.com/questions/11707586/how-do-i-expand-the-output-display-to-see-more-columns-of-a-pandas-dataframe
+Matplotlib.org. n.d. Matplotlib documentation — Matplotlib 3.5.0 documentation. [online] Available at: <https://matplotlib.org/3.5.0/index.html> [Accessed April 2022].
 
-https://towardsdatascience.com/mastering-summary-statistics-with-pandas-d515e17756be#:~:text=Pandas%20is%20a%20python%20library,statistical%20analysis%20and%20much%20more.
+onlinetutorialspoint. 2021. Pandas - Plotting Histogram from pandas Dataframes. [online] Available at: <https://www.onlinetutorialspoint.com/pandas/pandas-plotting-histogram-from-pandas-dataframes.html> [Accessed April 2022].
 
-https://stackoverflow.com/questions/49188960/how-to-show-all-columns-names-on-a-large-pandas-dataframe
+Pandas.pydata.org. n.d. pandas - Python Data Analysis Library. [online] Available at: <https://pandas.pydata.org/> [Accessed April 2022].
 
-https://www.simplilearn.com/tutorials/python-tutorial/data-visualization-in-python#:~:text=Matplotlib%20and%20Seaborn%20are%20python,primarily%20used%20for%20statistical%20graphs.
+Pierre, S., 2020. Mastering Summary Statistics with Pandas. [online] Medium. Available at: <https://towardsdatascience.com/mastering-summary-statistics-with-pandas-d515e17756be#:~:text=Pandas%20is%20a%20python%20library,statistical%20analysis%20and%20much%20more.> [Accessed April 2022].
 
-https://www.onlinetutorialspoint.com/pandas/pandas-plotting-histogram-from-pandas-dataframes.html
+Python Tutorial - Master Python Programming For Beginners from Scratch. n.d. How to Write to CSV Files in Python. [online] Available at: <https://www.pythontutorial.net/python-basics/python-write-csv-file/> [Accessed April 2022].
 
-https://dataindependent.com/pandas/pandas-histogram-dataframe-hist/
+Qureshi, S., 2021. The Mighty Iris Dataset. [online] Braintoy. Available at: <https://braintoy.ai/2021/04/19/mighty-iris-dataset/> [Accessed April 2022].
 
-https://seaborn.pydata.org/generated/seaborn.histplot.html
+Ratner, B., 2009. The correlation coefficient: Its values range between +1/−1, or do they?. Journal of Targeting, Measurement and Analysis for Marketing, 17(2), pp.139-142.
 
-https://realpython.com/pandas-groupby/
+Seaborn.pydata.org. n.d. seaborn: statistical data visualization — seaborn 0.11.2 documentation. [online] Available at: <https://seaborn.pydata.org/> [Accessed April 2022].
 
-https://www.activestate.com/resources/quick-reads/how-to-group-data-in-python-using-pandas/
+Simplilearn. 2021. A Complete Guide to Data Visualization in Python With Libraries, Chart, Graphs & More. [online] Available at: <https://www.simplilearn.com/tutorials/python-tutorial/data-visualization-in-python#:~:text=Matplotlib%20and%20Seaborn%20are%20python,primarily%20used%20for%20statistical%20graphs.> [Accessed April 2022].
 
-https://matplotlib.org/3.5.0/api/_as_gen/matplotlib.pyplot.close.html
+Singh, D., 2019. Interpreting Data Using Descriptive Statistics with Python | Pluralsight. [online] Pluralsight.com. Available at: <https://www.pluralsight.com/guides/interpreting-data-using-descriptive-statistics-python> [Accessed April 2022].
 
-https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Python_Seaborn_Cheat_Sheet.pdf
+Solomon, B., 2020. Pandas GroupBy: Your Guide to Grouping Data in Python – Real Python. [online] Realpython.com. Available at: <https://realpython.com/pandas-groupby/> [Accessed April 2022].
 
-Ratner, B. The correlation coefficient: Its values range between +1/−1, or do they?. J Target Meas Anal Mark 17, 139–142 (2009). https://doi.org/10.1057/jt.2009.5
+Stack Overflow. n.d. How do I expand the output display to see more columns of a Pandas DataFrame?. [online] Available at: <https://stackoverflow.com/questions/11707586/how-do-i-expand-the-output-display-to-see-more-columns-of-a-pandas-dataframe> [Accessed April 2022].
 
-( https://www.pythontutorial.net/python-basics/python-write-csv-file/)
+Stack Overflow. n.d. How to show all columns' names on a large pandas dataframe?. [online] Available at: <https://stackoverflow.com/questions/49188960/how-to-show-all-columns-names-on-a-large-pandas-dataframe> [Accessed April 2022].
 
-https://towardsdatascience.com/evaluating-linear-relationships-1d239f51297b
+Stojiljković, 2020. The Pandas DataFrame: Make Working With Data Delightful – Real Python. [online] Realpython.com. Available at: <https://realpython.com/pandas-dataframe/#retrieving-labels-and-data> [Accessed April 2022].
 
-https://www.pluralsight.com/guides/interpreting-data-using-descriptive-statistics-python
-
-Annals of the Missouri Botanical Garden
-
-Annals of Eugenics  https://doi.org/10.1111/j.1469-1809.1936.tb02137.x pg 179-188 Volume7, Issue2
-
-https://braintoy.ai/2021/04/19/mighty-iris-dataset/
+W3schools.com. n.d. Pandas Tutorial. [online] Available at: <https://www.w3schools.com/python/pandas/default.asp> [Accessed April 2022].
